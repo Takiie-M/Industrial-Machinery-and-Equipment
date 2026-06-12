@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial Machinery and Equipment</title>
+  <meta name="description" content="Demo Industrial Machinery services website showcasing equipment, maintenance, and operational solutions.">
+  <meta name="keywords" content="Industrial Machinery, Equipment, Demo, Industrial Solutions, Fabrication, Maintenance">
+  <meta name="author" content="Demo Company">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Industrial Machinery and Equipment Demo">
+  <meta property="og:description" content="Demo Industrial Machinery services website showcasing equipment, maintenance, and operational solutions.">
+
+  <!-- Twitter -->
+  <meta name="twitter:title" content="Industrial Machinery and Equipment Demo">
+  <meta name="twitter:description" content="Demo Industrial Machinery services website showcasing equipment, maintenance, and operational solutions.">
+
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="js/script.js" defer></script>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <style>
+    .eyebrow{font-family:var(--font-mono);font-size:0.68rem;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--red-bright);display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem;}
+    .eyebrow::before{content:'';width:40px;height:1px;background:var(--white)}
+  </style>
+</head>
+<body>
+<div class="cursor" id="cur"></div>
+<div class="cursor-ring" id="curR"></div>
+<div class="mobile-menu" id="mob">
+  <button class="mob-close" onclick="closeMob()">✕</button>
+  <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a><a href="contact.html">Contact</a>
+</div>
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo-clear.png" alt="Atom Group"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-text="Home" class="active">Home</a></li>
+      <li><a href="about.html" data-text="About Us" >About Us</a></li>
+      <li><a href="services.html" data-text="Services">Services</a></li>
+    </ul>
+    <a href="contact.html" class="nav-btn"><span>Contact Us</span></a>
+    <div class="hamburger" onclick="openMob()"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-slider">
+    <div class="slide active" style="background-image: url('/images/welding-torch_bigstock.webp');"></div>
+    <div class="slide" style="background-image: url('/images/H3195ecd07eff427d8f0cfe48899b6d94y.avif');"></div>
+    <div class="slide" style="background-image: url('/images/steel_fabrication_services_jubail.jpg');"></div>
+  </div>
+  <canvas id="particle-canvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag">Proudly Demo · Est. 2020</div>
+      <h1 class="hero-h1">
+        <span class="glitch" data-text="QUALITY">QUALITY</span>
+        <span class="line-outline">AFFORDABLE</span>
+        <span class="glitch" data-text="SERVICES">SERVICES</span>
+      </h1>
+      <p>Demo industrial machinery solutions designed for safe, efficient, and reliable operations across multiple sectors.</p>
+      <div class="hero-btns">
+        <a href="contact.html" class="btn btn-red">Get In Touch →</a>
+        <a href="services.html" class="btn btn-ghost">Our Services</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-num">15+</div><div class="hstat-lbl">Years Experience</div></div>
+        <div class="hstat"><div class="hstat-num">12</div><div class="hstat-lbl">Skilled Professionals</div></div>
+        <div class="hstat"><div class="hstat-num">6</div><div class="hstat-lbl">Core Services</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item">Equipment Supply</span>
+    <span class="marquee-item">Fabrication Services</span>
+    <span class="marquee-item">Maintenance</span>
+    <span class="marquee-item">Inspections</span>
+    <span class="marquee-item">Rentals</span>
+    <span class="marquee-item">Testing</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-sec">
+  <div class="container">
+    <div class="srv-header">
+      <div>
+        <div class="eyebrow">What We Do</div>
+        <h2>INDUSTRIAL<br><span style="color:var(--red-bright)">SOLUTIONS</span></h2>
+      </div>
+      <p>Demo content highlighting industrial machinery and equipment services for operational efficiency and safety.</p>
+    </div>
+    <div class="srv-grid">
+      <div class="srv-card">
+        <span class="srv-num">01</span>
+        <h4>Equipment Supply</h4>
+        <p>Placeholder content for sourcing and distributing machinery and industrial equipment.</p>
+      </div>
+      <div class="srv-card">
+        <span class="srv-num">02</span>
+        <h4>Fabrication Services</h4>
+        <p>Placeholder content illustrating custom fabrication and structural solutions.</p>
+      </div>
+      <div class="srv-card">
+        <span class="srv-num">03</span>
+        <h4>Facility Maintenance</h4>
+        <p>Demo text for general maintenance and operational support services.</p>
+      </div>
+      <div class="srv-card">
+        <span class="srv-num">04</span>
+        <h4>Equipment Servicing</h4>
+        <p>Sample text for inspections, servicing, and performance optimization.</p>
+      </div>
+      <div class="srv-card">
+        <span class="srv-num">05</span>
+        <h4>Equipment Rentals</h4>
+        <p>Demo text for short-term and long-term rental solutions.</p>
+      </div>
+      <div class="srv-card">
+        <span class="srv-num">06</span>
+        <h4>Inspection & Testing</h4>
+        <p>Placeholder content for compliance checks and operational testing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-sec">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-visual-wrap">
+        <div class="about-big-box">
+          <div class="about-big-num">12</div>
+          <div class="a-pill">● Est. 2020</div>
+          <h3>Demo Industrial Solutions</h3>
+          <p>A demo company showcasing industrial machinery services and operational solutions for manufacturing, logistics, and warehouse operations.</p>
+          <ul class="about-list">
+            <li>Innovative industrial solutions</li>
+            <li>Operational efficiency & safety</li>
+            <li>Teamwork and technical excellence</li>
+            <li>Customer satisfaction focused</li>
+          </ul>
+        </div>
+        <div class="about-float">
+          <div class="big">12</div>
+          <small>Skilled<br>Professionals</small>
+        </div>
+      </div>
+      <div>
+        <div class="eyebrow">Our Story</div>
+        <h2>POWERED BY<br><span style="color:var(--red-bright)">EXPERTISE</span></h2>
+        <div class="about-quote">"Reliable, demo machinery solutions for every operational need."</div>
+        <p>Demo content for services, maintenance, and equipment solutions designed to optimize workflow and ensure operational safety.</p>
+        <div class="about-tags">
+          <span class="tag">Material Handling</span>
+          <span class="tag">Fabrication</span>
+          <span class="tag">Industrial Expertise</span>
+          <span class="tag">South African</span>
+          <span class="tag">Demo Company</span>
+          <span class="tag">Years of Experience</span>
+        </div>
+        <a href="about.html" class="btn btn-red">Learn About Us →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why-sec">
+  <div class="container">
+    <div class="eyebrow">Why Choose Us</div>
+    <h2>THE DEMO<br><span style="color:var(--red-bright)">ADVANTAGE</span></h2>
+    <div class="why-grid">
+      <div class="why-card" data-n="01"><h4>Expertise</h4><p>Placeholder text for industrial expertise and machinery knowledge.</p></div>
+      <div class="why-card" data-n="02"><h4>Cost-Smart Solutions</h4><p>Demo content for efficient and cost-effective service delivery.</p></div>
+      <div class="why-card" data-n="03"><h4>Long-Term Support</h4><p>Placeholder demonstrating client partnership and ongoing support.</p></div>
+      <div class="why-card" data-n="04"><h4>Safety & Reliability</h4><p>Sample text emphasizing operational safety and reliable systems.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-band-inner">
+      <div class="sband-cell"><div class="sband-num">2020</div><div class="sband-lbl">Established</div></div>
+      <div class="sband-cell"><div class="sband-num">100%</div><div class="sband-lbl">SA Owned</div></div>
+      <div class="sband-cell"><div class="sband-num">All</div><div class="sband-lbl">Brands Serviced</div></div>
+      <div class="sband-cell"><div class="sband-num">RSA</div><div class="sband-lbl">Nationwide</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="cta-bg"></div>
+  <div class="container">
+    <div class="cta-inner">
+      <div class="eyebrow" style="justify-content:center">Ready to Start?</div>
+      <h2 style="color:var(--white)">OPTIMIZE YOUR<br><span style="color:var(--red-bright)">OPERATIONS</span></h2>
+      <p>Contact our demo team for a consultation on machinery and equipment solutions.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-red">Contact Us →</a>
+        <a href="services.html" class="btn btn-ghost">View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="images/logo-clear.png" alt="Demo Company"/>
+        <p>Demo content for industrial machinery services and operational solutions.</p>
+      </div>
+      <div>
+        <div class="ft">Services</div>
+        <ul class="flinks">
+          <li><a href="services.html">Equipment Supply</a></li>
+          <li><a href="services.html">Fabrication</a></li>
+          <li><a href="services.html">Maintenance</a></li>
+          <li><a href="services.html">Inspection</a></li>
+          <li><a href="services.html">Rentals</a></li>
+          <li><a href="services.html">Testing</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft">Navigation</div>
+        <ul class="flinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft">Contact</div>
+        <div class="fci">123 Demo Street, Pretoria, SA</div>
+        <div class="fci">demo@example.com</div>
+        <div class="fci">(+27) 000 000 0000</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 DEMO COMPANY — ALL RIGHTS RESERVED</span>
+      <span>HOSTED & DESIGNED BY <a href="https://github.com/Takiie-M" target="_blank">Takalani Mulaudzi</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
