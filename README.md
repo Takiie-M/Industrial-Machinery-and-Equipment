@@ -37,13 +37,6 @@ This website is tailored for businesses in:
 * Heavy Equipment Supply
 * Mechanical & Electrical Services
 
-📷 Preview
-
-(Add screenshots here)
-
-🔗 Live Demo
-
-(Add your hosted link here)
 
 📁 Setup & Usage
 
